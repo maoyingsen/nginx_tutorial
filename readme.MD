@@ -1,6 +1,12 @@
+Nginx可作为web服务器、负载均衡、反向代理等。Nginx包含一个master process和多个worker process，master process主要根据配置参数控制work process，worker process处理实际的请求。  
+
+work process的数量在配置文件中设定，可能是固定的，也可能自动匹配cpu core。
+
 反向代理（Reverse Proxy）方式是指以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。 
 
 ![image](nginx1.PNG)
+
+
 
 主要的配置文件为```/etc/nginx/nginx.conf```，结构如下：
 
